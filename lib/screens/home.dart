@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../models/raw_models/bar_choices.dart';
+import '../views/music_view.dart';
 
 class Home extends StatefulWidget {
 
@@ -15,9 +16,9 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int currentindex=0;
   List<BarChoice> items=[
-    BarChoice(label: "Musique", iconData: Icons.music_note, page: Container()),
-    BarChoice(label: "Favoris", iconData: Icons.whatshot, page: Container()),
-    BarChoice(label: "Recherche", iconData: Icons.search, page: Container())
+    BarChoice(label: "Musique", iconData: Icons.music_note, page: MusicView()),
+    BarChoice(label: "Favoris", iconData: Icons.whatshot, page: Container(child: Text("Blabl"),)),
+    BarChoice(label: "Recherche", iconData: Icons.search, page: Container(child: Text('Bloblo'),))
   ];
   @override
   void initState(){
@@ -58,9 +59,7 @@ class _HomeState extends State<Home> {
           ),
         ),
       ),
-      body: Center(
-        child: Text("Mon appli"),
-      ),
+      body: items[currentindex].page,
       bottomNavigationBar: BottomNavigationBar(
         currentIndex:currentindex ,
         items: items.map((i)=>i.getItem()).toList(),
@@ -73,8 +72,12 @@ class _HomeState extends State<Home> {
 
 
   barTapped(int index){
-    setState(){
-      currentindex=index;
-    };
-  }
+
+    setState(
+        (){
+          currentindex=index;
+        }
+    );
+    }
+
 }

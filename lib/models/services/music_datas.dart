@@ -7,7 +7,7 @@ import '../raw_models/song.dart';
 class MusicDatas {
 
   //Artists
-  Artist eminem = Artist(name: "Eminem", urlImage: "https://img.nrj.fr/zpXIPBmeFegj7GTAJAu2wkI7ztI=/http://image-api.nrj.fr/http/media.nrj.fr/1900x1200/2017/12/eminem_799.jpg");
+  Artist eminem = Artist(name: "Eminem", urlImage: "https://image.shutterstock.com/image-photo/los-angeles-jan-30-eminem-260nw-1632717139.jpg");
   Artist tupac = Artist(name: "2pac", urlImage: "https://arc-anglerfish-eu-central-1-prod-leparisien.s3.amazonaws.com/public/ZRUB7IELF4RAUO4ZRV5TNJVRVQ.jpg");
   Artist smashing = Artist(name: "Smashing Pumpkins", urlImage: "https://www.rollingstone.fr/wp-content/uploads/2018/08/SmashingPumpkins.jpg");
   Artist amadeus = Artist(name: "Mozart", urlImage: "https://www.musicologie.org/Biographies/m/mozart.jpg");
