@@ -1,0 +1,4 @@
+enum MediaType{
+  inApp,
+  internet
+}
