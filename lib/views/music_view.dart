@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'list_containers/albumcontainers.dart';
 import 'list_containers/artistcontainer.dart';
+import 'list_containers/genrecontainer.dart';
 
 class MusicView extends StatelessWidget {
   const MusicView({Key? key}) : super(key: key);
@@ -19,6 +20,7 @@ class MusicView extends StatelessWidget {
           AlbumsContainer(),
           const Divider(),
           //Container pour les Genres de musique
+          GenreContainer()
         ],
       ),
     );
